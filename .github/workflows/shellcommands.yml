@@ -6,7 +6,12 @@ jobs:
   steps:
    - name: Echo a String
      run: echo "Hello World"
-   - name: Multiline
+   - name: Multiline Script
      run: |
       node -v
       npm -v
+   - name: Python Command
+     run: |
+      import platform
+      print(platform.processor())
+     shell: python
