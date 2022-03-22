@@ -1,5 +1,26 @@
 name: GitHub Actions
-on: [push]
+on: 
+ push:
+  #branches:
+   #- master
+   #- 'feature/*'
+   #- 'feature/**'
+   #- '!feature/feact'
+  #branches-ignore:
+   #- null
+  #tags:
+  # - v1.*
+  #paths:
+   #- '**.js'
+  #paths-ignore:
+   #- 'docs/**'
+  # repository_dispatch:
+  #   types: [build]
+ #schedule:
+  #- cron: "0/5 * * * *"
+  #- cron: "0/6 * * * *"
+ #pull_request:
+  #types:[closed,assigned,opened,reopened]
 jobs:
  run-github-actions:
   runs-on: ubuntu-latest
