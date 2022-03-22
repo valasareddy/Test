@@ -3,7 +3,7 @@ on: push
 env:
  WF_ENV: Available to All Jobs
  SC_ENV: ${{ secrets.SC_ENV}}
- TK_ENV: ${{ secrets.GITHUB_TOKEN }}
+ #TK_ENV: ${{ secrets.GITHUB_TOKEN }}
 jobs:
  log-env:
   runs-on: ubuntu-latest
